@@ -1,0 +1,414 @@
+:root {
+    --Roboto: 'Roboto', sans-serif;
+    --Open-Sans: 'Open Sans', sans-serif;
+    --Oswald: 'Oswald', sans-serif;
+    --Italianno: 'Italianno', cursive;
+    --Bangers: 'Bangers', cursive;
+    --Great-Vibes: 'Great Vibes', cursive;
+    --Tangerine: 'Tangerine', cursive;
+
+    --open-sans-condensed: 'Open Sans Condensed', sans-serif;
+    --teko: 'Teko', sans-serif;
+    --monoton: 'Monoton', cursive;
+    --cinzel-decorative: 'Cinzel Decorative', cursive;
+    --bs: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        0 12px 40px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+}
+
+/** =================Nav bar====================*/
+nav {
+    width: 100%;
+}
+
+.navbar-brand {
+    font-family: var(--Oswald);
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid teal;
+}
+
+.navbar-dark {
+    background: rgb(13, 16, 22)
+}
+
+.nav-link {
+    color: #ffffff !important;
+    padding: 5px 25px !important;
+    border-bottom: 2px solid rgb(13, 16, 22);
+    font-family: var(--Oswald);
+    letter-spacing: 1px;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid teal;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+/** =========Projects========================== */
+#project .container-fluid {
+    color: #ffffff !important;
+}
+
+#project {
+    background-image: url("../images/pexels-photo-97077.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+    position: relative;
+}
+
+#project::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#project .project-left {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--Oswald);
+    text-transform: capitalize;
+}
+
+#project .project-left h2 {
+    position: relative;
+    z-index: 2;
+}
+
+#project .project-left h3 {
+    position: relative;
+    z-index: 2;
+}
+
+#project .project-left h4 {
+    position: relative;
+    z-index: 2;
+}
+
+#project .project-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+}
+
+#project .project-right .fa {
+    font-size: 7em;
+    color: #ffffff !important;
+    position: relative;
+    z-index: 1;
+}
+
+#project .project-right h1 {
+    position: relative;
+    z-index: 2;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/**====================================================== */
+#project-display {
+    background-color: #dbe5df !important;
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+#project-display .heading {
+    font-family: var(--Oswald);
+    font-size: 2.5em;
+    font-weight: bolder;
+    position: relative;
+}
+
+#project-display .heading:before {
+    position: absolute;
+    content: '';
+    width: 19%;
+    height: 5px;
+    background: rgb(36, 91, 95);
+    top: 130%;
+}
+
+.card {
+    -webkit-box-shadow: 10px 10px 15px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 15px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 15px -7px rgba(0, 0, 0, 0.75);
+}
+
+#project-display .card .card-title {
+    font-family: var(--Oswald);
+    font-size: 1.5em !important;
+    text-align: center;
+    text-transform: capitalize !important;
+
+}
+
+#project-display .card .card-text {
+    font-family: var(--teko);
+    font-size: 0.9em !important;
+    text-align: center;
+}
+
+#project-display .card-deck {
+    padding: 10px;
+}
+
+#project-display .card-deck .card-img-top {
+    width: 100%;
+    height: 200px;
+    border-bottom: 2px solid #012422;
+}
+
+#project-display .card ul li {
+    text-align: center;
+}
+
+
+/*=============icons=======================*/
+#project-display .card ul li .btn {
+    border: 1px solid #000000;
+}
+
+#project-display .card ul li a .fa {
+    font-size: 2em;
+}
+
+#project-display .card ul li a .fa-github {
+    color: #ffffff;
+}
+
+#project-display .card ul li a .fa-download {
+
+    color: #ffffff;
+}
+
+#project-display .card ul li a .fa-eye {
+
+    color: #ffffff;
+}
+
+#project-display .card ul li a .fa-youtube-play {
+
+    color: #ff0000;
+}
+
+#project-display .card ul li .github {
+
+    background-color: #24292e !important;
+}
+
+#project-display .card ul li .download {
+
+    background-color: #da5e0b !important;
+}
+
+#project-display .card ul li .eye {
+
+    background-color: #0a3e4b !important;
+}
+
+#project-display .card ul li .youtube-play {
+
+    background-color: #ffffff !important;
+}
+
+
+/*=============icons- hover =======================*/
+#project-display .card ul li a .fa-github:hover {
+    color: #24292e;
+}
+
+#project-display .card ul li a .fa-download:hover {
+
+    color: #da5e0b;
+}
+
+#project-display .card ul li a .fa-eye:hover {
+
+    color: #0a3e4b;
+}
+
+#project-display .card ul li a .fa-youtube-play:hover {
+
+    color: #ffffff;
+}
+
+#project-display .card ul li .github:hover {
+
+    background-color: #ffffff !important;
+}
+
+#project-display .card ul li .download:hover {
+
+    background-color: #ffffff !important;
+}
+
+#project-display .card ul li .eye:hover {
+
+    background-color: #ffffff !important;
+}
+
+#project-display .card ul li .youtube-play:hover {
+
+    background-color: #ff0000 !important;
+}
+
+/** ========================Footer====================*/
+#footer {
+    width: 100%;
+    color: #ffffff;
+    font-family: var(--Oswald);
+    font-size: 1em;
+    border-top: 0.5px dotted #cacaca;
+    background: #24292e;
+
+}
+
+#footer p {
+    letter-spacing: 0.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/**==================Media Query for Landscape ================== */
+
+@media (max-height:415px) and (max-width:768px) and (orientation:landscape) {
+
+
+    body {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    #project {
+        height: 100vh !important;
+        width: 100%;
+    }
+
+    #project .project-left {
+
+        height: 100vh;
+        width: 100%;
+    }
+
+
+
+    #project-display {
+        height: 100%;
+        width: 100%;
+    }
+
+    #project-display .heading {
+        font-size: 2em;
+    }
+
+}
+
+/**==================End of - Media Query - Landscape ================== */
+
+/**==================Media Query - max ================== */
+@media (max-width:576px) {
+
+
+    body {
+        overflow-x: hidden !important;
+        width: 100%;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    #project {
+        width: 100%;
+    }
+
+    #project .project-left h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    #project .project-left h3 {
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    #project .project-left h4 {
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    #project .display {
+        display: none;
+    }
+
+    /*===project-display==============*/
+    #project-display {
+        width: 100%;
+    }
+
+    #project-display .heading {
+        font-size: 1.6em;
+    }
+
+}
+
+@media (max-width:768px) {
+    #project .display {
+        display: none !important;
+    }
+}
+
+@media (max-width:992px) {
+    #project .display {
+        display: none;
+    }
+}
+
+/**==================Media Query - max ================== */
+@media (min-width:575.98px) {}
+
+@media (min-width:767.98px) {}
+
+@media (min-width:991.98px) {}
